@@ -17,14 +17,14 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  badgescreated = attendees.clone
-  rooms = attendees.clone
-    batch_badge_creator(badgescreated).each do |x| puts x
-    end
-    assign_rooms(rooms).each do |x| puts x
-    end
-  # batch_badge_creator(attendees).each do |x| puts x
-  # end
-  # assign_rooms(attendees).each do |x| puts x
-  # end
+  # badgescreated = attendees.clone
+  # rooms = attendees.clone
+  #   batch_badge_creator(badgescreated).each do |x| puts x
+  #   end
+  #   assign_rooms(rooms).each do |x| puts x
+  #   end
+  batch_badge_creator(attendees).each do |x| puts x
+  end
+  assign_rooms(attendees).each do |x| puts x
+  end
 end
