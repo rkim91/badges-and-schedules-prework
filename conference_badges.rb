@@ -13,8 +13,9 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
-  # arr = []
+  # arr = [] CREATE EMPTY VARIABLE "USE THIS FOR USING each_with_index"
   attendees.map.with_index do |x, i|
+    # if using each_with_index add arr.push to line 19
     "Hello, #{x}! You'll be assigned to room #{i+1}!"
   end
   # return arr
