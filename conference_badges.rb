@@ -17,7 +17,7 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  for i in 0...attendees.length
-  puts batch_badge_creator(attendees[i])
+  for x in 0...attendees.length
+  puts batch_badge_creator(attendees[x])
 end
 end
