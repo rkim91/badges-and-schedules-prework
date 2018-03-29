@@ -3,10 +3,13 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-  for x in 0... attendees.length
-    attendees[x] = "Hello, my name is #{attendees[x]}."
+  attendees.map do |x| 
+    "Hello, my name is #{x}"
   end
-  return attendees
+  # for x in 0... attendees.length
+  #   attendees[x] = "Hello, my name is #{attendees[x]}."
+  # end
+  # return attendees
 end
 
 def assign_rooms(attendees)
