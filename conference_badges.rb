@@ -15,7 +15,7 @@ end
 def assign_rooms(attendees)
   # arr = []
   attendees.map_with_index do |x, i|
-    arr.push "Hello, #{x}! You'll be assigned to room #{i+1}!"
+    "Hello, #{x}! You'll be assigned to room #{i+1}!"
   end
   # return arr
   # for x in 0...attendees.length
